@@ -7,7 +7,7 @@ You have list of random electronic parts you want to order. It may be poorly str
 
 You do the following:
 * Put any components into a raw text file, according to the format below.
-* Run `python sort_components.py -in_file:<text file name>`
+* Run `python sort_components.py -in_file=<text file name>`
 * You receive the following files:
   * *Parts list* - The parts list, with delimiters between columns, suitable for pasting into a spreadsheet.
   * *Totals* - The total number of components of each type, across all projects.
@@ -28,9 +28,9 @@ Each part must be on its own line. Here are some examples:
 
 ```
 R14 100K
-C100 10u
+C100 10p Can be a ceramic capacitor 
 D5 1N4148
-LEVEL B100K
+LEVEL B100K Should use 16mm split shaft
 ```
 
 ### Other information
