@@ -35,21 +35,18 @@ part_type_re = re.compile(
     re.IGNORECASE,
 )
 
-
-def process_part_type(line, out, value_prefix, separator):
-    out += f"\n{value_prefix}{separator}{part_type_re.match(line).groups()[0]}"
-    return out
+def process_part_type(line, rows, value_prefix, separator):
+    rows.append(f"{value_prefix}{separator}{part_type_re.match(line).groups()[0]}")
 
 
-def process_project_name(line, out, value_prefix, separator):
-    out += f"\n{value_prefix}{separator}{project_re.match(line).groups()[0]}{separator}{project_re.match(line).groups()[1]}"
-    return out
+def process_project_name(line, rows, value_prefix, separator):
+    rows.append(f"{value_prefix}{separator}{project_re.match(line).groups()[0]}{separator}{project_re.match(line).groups()[1]}")
 
 
-def process_simple(line, out, totals, line_regex, value_regex, value_prefix, separator):
+def process_simple(line, rows, totals, line_regex, value_regex, value_prefix, separator):
     line_regex_result = line_regex.match(line)
 
-    out += f"\n{separator.join([group for group in line_regex_result.groups() if group != ''])}"
+    rows.append(f"{separator.join([group for group in line_regex_result.groups() if group != ''])}")
     value_regex_result = (
         f"{value_prefix}{separator}{value_regex.match(line).groups()[0]}"
     )
@@ -57,22 +54,21 @@ def process_simple(line, out, totals, line_regex, value_regex, value_prefix, sep
         totals[value_regex_result] += 1
     else:
         totals[value_regex_result] = 1
-    return [out, totals]
 
 
-def process(str_in, out, totals, projects, separator):
+def process(str_in, rows, totals, projects, separator):
     lines = str_in.split("\n")
     for line in lines:
         project_match = project_re.match(line)
         if project_match:
-            out = process_project_name(line, out, "PROJECT", separator)
+            process_project_name(line, rows, "\nPROJECT", separator)
             projects.append(
                 f"{project_match.groups()[0]}{separator}{project_match.groups()[1]}"
             )
             continue
         part_type_match = part_type_re.match(line)
         if part_type_match:
-            out = process_part_type(line, out, "PART CLASS", separator)
+            process_part_type(line, rows, "PART CLASS", separator)
             continue
         resistor_match = resistors_re.match(line)
         capacitor_match = capacitors_re.match(line)
@@ -83,21 +79,21 @@ def process(str_in, out, totals, projects, separator):
         switches_match = switches_re.match(line)
 
         if ic_match:
-            [out, totals] = process_simple(
-                line, out, totals, ics_re, ic_value_re, "IC", separator
+            process_simple(
+                line, rows, totals, ics_re, ic_value_re, "IC", separator
             )
         elif diodes_match:
-            [out, totals] = process_simple(
-                line, out, totals, diodes_re, diode_value_re, "DIODE", separator
+            process_simple(
+                line, rows, totals, diodes_re, diode_value_re, "DIODE", separator
             )
         elif pots_match:
-            [out, totals] = process_simple(
-                line, out, totals, pots_re, pot_value_re, "POT", separator
+            process_simple(
+                line, rows, totals, pots_re, pot_value_re, "POT", separator
             )
         elif transistors_match:
-            [out, totals] = process_simple(
+            process_simple(
                 line,
-                out,
+                rows,
                 totals,
                 transistors_re,
                 transistor_value_re,
@@ -105,13 +101,13 @@ def process(str_in, out, totals, projects, separator):
                 separator,
             )
         elif switches_match:
-            [out, totals] = process_simple(
-                line, out, totals, switches_re, switch_value_re, "SWITCH", separator
+            process_simple(
+                line, rows, totals, switches_re, switch_value_re, "SWITCH", separator
             )
         elif resistor_match:
-            [out, totals] = process_simple(
+            process_simple(
                 line,
-                out,
+                rows,
                 totals,
                 resistors_re,
                 resistor_value_re,
@@ -119,9 +115,9 @@ def process(str_in, out, totals, projects, separator):
                 separator,
             )
         elif capacitor_match:
-            [out, totals] = process_simple(
+            process_simple(
                 line,
-                out,
+                rows,
                 totals,
                 capacitors_re,
                 capacitor_value_re,
@@ -129,18 +125,20 @@ def process(str_in, out, totals, projects, separator):
                 separator,
             )
         else:
-            out += f"\n{line} (unprocessed)"
+            rows.append(f"{line} (unprocessed)")
             totals["UNPROCESSED"] += 1
-    return out
 
 
 def output_parts(parts, filename):
     print(
         "====PARTS====",
     )
-    print(parts)
+    out = ""
+    for item in parts:
+        out += f"{item}\n"
+    print(out)
     f = open(filename, "w")
-    f.write(parts)
+    f.write(out)
     f.close()
 
 
@@ -149,7 +147,7 @@ def output_totals(totals, separator, filename):
     list.sort()
     out = ""
     for item in list:
-        out += item + "\n"
+        out += f"{item}\n"
     print(
         "====TOTALS====",
     )
@@ -173,12 +171,12 @@ def output_projects(projects, filename):
 
 
 def main(in_file, parts_file, totals_file, projects_file, separator):
-    parts = ""
+    parts = []
     totals = {"UNPROCESSED": 0}
     projects = []
     f = open(in_file, "r")
     str_in = f.read()
-    parts = process(str_in, parts, totals, projects, separator)
+    process(str_in, parts, totals, projects, separator)
     output_parts(parts, parts_file)
     output_totals(totals, separator, totals_file)
     output_projects(projects, projects_file)
