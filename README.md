@@ -1,5 +1,5 @@
 # PCB Bill of Materials (pcb-bom)
-Utility for tabulating and bulk-ordering electronic components from poorly-structured lists of data (e.g. PedalPCB component lists). It was created for guitar pedal component calculations.
+Utility for tabulating and bulk-ordering electronic components from poorly-structured lists of data (e.g. PedalPCB component lists). It was created for ease of ordering DIY guitar pedal components.
 
 ## What does it do?
 
@@ -58,4 +58,4 @@ Running the script will output 3 files:
 
 ### What do I do with them?
 
-You can just keep the files or look at the totals, but they are designed to be pasted into a spreadsheet, such as Google Sheets. Create a new sheet, copy the content of the file you want in a spreadsheet, and paste it into the new sheet. A small popup will appear, and you should select `Paste formatting` -> `Split text to columns` -> `Separator: custom` -> `Type "|"`. You will now have your data in a spreadsheet with columns you can easily tabulate, etc. The `pcb-bom` allows you to choose a column delimiter with the `separator` command-line argument. The default is the pipe character (`|`), since it is rarely used (unlike commas, spaces, or semicolons).
+You can just keep the files or look at the totals, but they are designed to be pasted into a spreadsheet, such as Google Sheets. Create a new sheet, copy the content of the file you want in a spreadsheet, and paste it into the new sheet. A small popup will appear, and you should select `Paste formatting` -> `Split text to columns` -> `Separator: custom` -> `Type "|"`. You will now have your data in a spreadsheet with columns you can easily tabulate, etc. `pcb-bom` allows you to choose a column delimiter with the `separator` command-line argument. The default is the pipe character (`|`), since it is rarely used (unlike commas, spaces, or semicolons).
