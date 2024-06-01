@@ -1,0 +1,483 @@
+*Greengage https://docs.pedalpcb.com/project/Greengage.pdf
+RESISTORS (1/4W)
+R1 1M
+R2 1K
+R3 10M
+R4 10K
+R5 47K
+R6 4K7
+R7 1K
+R8 10K
+R9 330R
+R10 1K
+R11 1K
+R12 1M
+R13 100R
+R14 100K
+R100 4K7 
+CAPACITORS
+C1 33n
+C2 1u
+C3 56p
+C4 100n
+C5 47n
+C6 470n
+C7 56p
+C8 1u
+C9 1u
+C10 10u
+C100 10u
+C101 100u
+C102 100u
+INTEGRATED CIRCUITS
+IC1 TL072
+IC2 TL072
+IC100 TC1044SCPA
+DIODES
+D1 3mm Red LED
+D2 3mm Red LED
+D3 1N4148
+D4 1N4148
+D5 1N4148
+D100 1N5817
+POTENTIOMETERS
+GAIN B1M
+TONE W20K
+LEVEL B100K
+SWITCHES
+MODE SPDT (ON/OFF/ON)
+*Squidward https://docs.pedalpcb.com/project/Squidward.pdf
+RESISTORS
+R1 2M2
+R2 160K
+R3 560K
+R4 6K2
+R5 18K
+R6 10K
+R7 10K
+R8 68K
+R9 68K
+R10 10K
+R11 22K
+R12 22K
+R13 47K
+R100 4K7 
+CAPACITORS
+C1 100p
+C2 47n
+C3 47n
+C4 47n
+C5 100n
+C100 100u
+TRANSISTORS
+Q1 2N5089
+Q2 2N3906
+Q3 2N5089
+DIODES
+D1 1N4148
+D2 1N4148
+D100 1N5817
+*Caesar https://docs.pedalpcb.com/project/PedalPCB-Caesar.pdf
+R1 1M Resistor, 1/4W
+R2 47K Resistor, 1/4W
+R3 1K Resistor, 1/4W
+R4 10K Resistor, 1/4W
+R5 470K Resistor, 1/4W
+R6 1M Resistor, 1/4W
+R7 33K Resistor, 1/4W
+R8 10K Resistor, 1/4W
+R9 47K Resistor, 1/4W
+R10 10K Resistor, 1/4W
+R11 6K8 Resistor, 1/4W
+R12 22K Resistor, 1/4W
+R13 10K Resistor, 1/4W
+R14 47K Resistor, 1/4W
+R15 47K Resistor, 1/4W
+R16 100K Resistor, 1/4W
+R17 10K Resistor, 1/4W
+R18 4K7 Resistor, 1/4W
+R19 4K7 Resistor, 1/4W
+R20 10K Resistor, 1/4W
+R21 10K Resistor, 1/4W
+R22 33K Resistor, 1/4W
+R23 10K Resistor, 1/4W
+R24 4K7 Resistor, 1/4W
+R25 2K7 Resistor, 1/4W
+R26 33K Resistor, 1/4W
+R27 56K Resistor, 1/4W
+R28 330K Resistor, 1/4W
+R29 10K Resistor, 1/4W
+R30 10K Resistor, 1/4W
+R31 10K Resistor, 1/4W
+R32 10K Resistor, 1/4W
+R33 1M Resistor, 1/4W
+R34 12K Resistor, 1/4W
+R35 12K Resistor, 1/4W
+R36 12K Resistor, 1/4W
+R37 12K Resistor, 1/4W
+R38 47K Resistor, 1/4W
+R39 10K Resistor, 1/4W
+R40 470R Resistor, 1/4W
+R41 100K Resistor, 1/4W
+R100 10K Resistor, 1/4W
+R101 10K Resistor, 1/4W
+R102 33R Resistor, 1/4W
+R103 4K7 Resistor, 1/4W
+SHAPE ON/ON Toggle switch, SPDT 2-position (ON/ON)
+C1 47n Film capacitor, 7.2 x 2.5mm
+C2 1u Film capacitor, 7.2 x 5.0mm
+C3 47n Film capacitor, 7.2 x 2.5mm
+C4 6n8 Film capacitor, 7.2 x 2.5mm
+C5 100p Ceramic capacitor
+C6 33n Film capacitor, 7.2 x 2.5mm
+C7 10n Film capacitor, 7.2 x 2.5mm
+C8 3n3 Film capacitor, 7.2 x 2.5mm
+C9 8n2 Film capacitor, 7.2 x 2.5mm
+C10 470p Ceramic capacitor
+C11 47p Ceramic capacitor
+C12 33n Film capacitor, 7.2 x 2.5mm
+C13 3n3 Film capacitor, 7.2 x 2.5mm
+C14 10u Electrolytic capacitor, 5mm
+C15 8n2 Film capacitor, 7.2 x 2.5mm
+C16 470p Ceramic capacitor
+C17 33n Film capacitor, 7.2 x 2.5mm
+C18 6n8 Film capacitor, 7.2 x 2.5mm
+C19 100p Ceramic capacitor
+C20 1u Film capacitor, 7.2 x 5.0mm
+C100 100u Electrolytic capacitor, 5mm
+C101 100n Film capacitor, 7.2 x 2.5mm
+C102 47u Electrolytic capacitor, 5mm
+C103 10u Electrolytic capacitor, 5mm
+C104 220u Electrolytic capacitor, 5mm
+D1 3mm Red 3mm Red LED
+D2 3mm Red 3mm Red LED
+D3 1N914 Signal diode, DO-35
+D4 1N914 Signal diode, DO-35
+D100 1N5817 Schottky diode, DO-41
+D101 9V1 Zener diode 1/2W, 9.1V
+IC1 TL022 Dual op-amp, DIP8
+IC2 RC4558 Dual op-amp, DIP8
+IC3 V3207D BBD Analog Delay Line
+IC4 V3102D BBD Clock, Two-Phase
+Q1 2N5088 BJT transistor, NPN TO-92
+Q2 2N5088 BJT transistor, NPN TO-92
+Q3 2N5088 BJT transistor, NPN TO-92
+Q4 2N5088 BJT transistor, NPN TO-92
+Q5 2N5088 BJT transistor, NPN TO-92
+RATE B100K 16mm right-angle PCB mount pot
+DEPTH B100K 16mm right-angle PCB mount pot
+LAG B250K 16mm right-angle PCB mount pot
+BLEND B10K 16mm right-angle PCB mount pot
+TRIM 50K Trim potentiometer (3362P style)
+*Shika https://docs.pedalpcb.com/project/Shika-PedalPCB.pdf
+R1 1M Resistor, 1/4W
+R2 33K Resistor, 1/4W
+R3 82K Resistor, 1/4W
+R4 390K Resistor, 1/4W
+R5 18K Resistor, 1/4W
+R6 100R Resistor, 1/4W
+R7 820R Resistor, 1/4W
+R8 8K2 Resistor, 1/4W
+R9 390K Resistor, 1/4W
+R10 82K Resistor, 1/4W
+R11 12K Resistor, 1/4W
+R12 150R Resistor, 1/4W
+R13 8K2 Resistor, 1/4W
+R14 390K Resistor, 1/4W
+R15 82K Resistor, 1/4W
+R16 18K Resistor, 1/4W
+R17 100R Resistor, 1/4W
+R18 39K Resistor, 1/4W
+R19 39K Resistor, 1/4W
+R20 390K Resistor, 1/4W
+R21 47K Resistor, 1/4W
+R22 12K Resistor, 1/4W
+R23 1K Resistor, 1/4W
+R100 100R Resistor, 1/4W
+RLED 4K7 Resistor, 1/4W
+C1 100p Ceramic capacitor
+C2 100n Film capacitor, 7.2 x 2.5mm
+C3 560p Ceramic capacitor
+C4 100n Film capacitor, 7.2 x 2.5mm
+C5 100n Film capacitor, 7.2 x 2.5mm
+C6 560p Ceramic capacitor
+C7 47n Film capacitor, 7.2 x 2.5mm
+C8 100n Film capacitor, 7.2 x 2.5mm
+C9 560p Ceramic capacitor
+C10 47n Film capacitor, 7.2 x 2.5mm
+C11 3n3 Film capacitor, 7.2 x 2.5mm
+C12 10n Film capacitor, 7.2 x 2.5mm
+C13 100n Film capacitor, 7.2 x 2.5mm
+C14 100n Film capacitor, 7.2 x 2.5mm
+C100 220u Electrolytic capacitor, 5mm
+Q1 2N3904 BJT transistor, NPN TO-92
+Q2 2N3904 BJT transistor, NPN TO-92
+Q3 2N3904 BJT transistor, NPN TO-92
+Q4 2N3904 BJT transistor, NPN TO-92
+D1 1N4148 Signal diode, DO-35
+D2 1N4148 Signal diode, DO-35
+D3 1N4148 Signal diode, DO-35
+D4 1N4148 Signal diode, DO-35
+D100 1N5817 Schottky diode, DO-41
+VOLUME B50K 16mm right-angle PCB mount pot
+TONE B50K 16mm right-angle PCB mount pot
+SUSTAIN B50K 16mm right-angle PCB mount pot
+*Percolation Station https://docs.pedalpcb.com/project/PercolationStation.pdf
+RESISTORS (1/4W)
+R1 750K
+R2 220K
+R3 91K
+R4 20K
+R5 4K7
+R100 4K7 
+CAPACITORS
+C1 100p
+C2 50n
+C3 100n
+C4 47u
+C6 100n
+C100 47u 
+TRANSISTORS
+Q1 2N404A
+Q2 2N3565
+DIODES
+D1 GE
+D2 GE
+D100 1N5817
+POTENTIOMETERS
+HARMONICS A100K
+BALANCE A50K 
+*Dirt Dauber https://docs.pedalpcb.com/project/DirtDauber-PedalPCB.pdf
+R1 2K2 Resistor, 1/4W
+R2 3M3 Resistor, 1/4W
+R3 3M3 Resistor, 1/4W
+R4 100K Resistor, 1/4W
+R5 100K Resistor, 1/4W
+R100 4K7 Resistor, 1/4W
+R101 4K7 Resistor, 1/4W
+C1 100n Film capacitor, 7.2 x 2.5mm
+C2 1u Electrolytic capacitor, 5mm
+C3 100n Film capacitor, 7.2 x 2.5mm
+C4 1u Electrolytic capacitor, 5mm
+C100 100u Electrolytic capacitor, 6.3mm
+C101 100n Film capacitor, 7.2 x 2.5mm
+C102 100n Film capacitor, 7.2 x 2.5mm
+D100 1N5817 Schottky diode, DO-41
+IC1 CD4049UBE CMOS Hex/Buffer/Converter
+IC2 CD4040BE CMOS 12-Bit Binary Counter
+SW1 ON/ON Toggle switch, SPDT 2-position (ON/ON)
+OCTAVE B100K 16mm right-angle PCB mount pot
+FUZZ B100K 16mm right-angle PCB mount pot
+LEVEL A100K 16mm right-angle PCB mount pot
+*Titania2 https://docs.pedalpcb.com/project/Titania2.pdf
+RESISTORS (1/4W)
+R1 1M
+R2 1K
+R3 1M
+R4 10K
+R5 1M
+R6 10K
+R7 4K65 (4K7)
+R100 4K7
+CAPACITORS
+C1 100p
+C2 33n
+C3 100n
+C4 47u
+C5 100n
+C6 2n7
+C7 27n
+C8 1n
+C100 100u
+C101 100n 
+TRANSISTORS
+Q1 NPN*
+Q2 NPN*
+Q3 NPN*
+DIODES
+D100 1N5817
+POTENTIOMETERS
+VOLUME A100K
+GAIN B2K
+TONE B25K
+*Mahayana Drive https://docs.pedalpcb.com/project/Mahayana.pdf
+RESISTORS (1/4W)
+R1 2M2
+R2 470K
+R3 1K
+R4 1K
+R5 10K
+R6 1K
+R100 4K7
+R101 10K
+R102 10K
+CAPACITORS
+C1 470n
+C2 100p
+C3 100n
+C4 3n3
+C5 470n
+C100 100u
+C101 47u
+TRANSISTORS
+Q1 2N7000
+Q2 2N7000
+INTEGRATED CIRCUITS
+IC1 AD712
+DIODES
+D1 BAT41
+D2 1N34A
+D3 BAT41
+D100 1N5817
+POTENTIOMETERS
+VOLUME B100K
+DRIVE B500K
+TONE B50K
+VOICE B10K 
+*El Sol https://docs.pedalpcb.com/project/ElSol-PedalPCB.pdf
+R1 1M Resistor, 1/4W
+R2 68K Resistor, 1/4W
+R100 4K7 Resistor, 1/4W
+C1 10u Electrolytic capacitor, 5mm
+C2 10u Electrolytic capacitor, 5mm
+C3 1u Electrolytic capacitor, 5mm
+C4 1u Electrolytic capacitor, 5mm
+C5 4n7 Film capacitor, 7.2 x 2.5mm
+C100 100u Electrolytic capacitor, 5mm
+D100 1N5817 Schottky diode, DO-41
+IC1 LM386 Audio Power Amplifier, DIP8
+IC2 LM386 Audio Power Amplifier, DIP8
+VOLUME A100K 16mm right-angle PCB mount pot
+*Sabbath Distortion https://docs.pedalpcb.com/project/Sabbath.pdf
+Resistors
+R1 220K
+R2 68K
+R3 10K
+R4 4K7
+R5 47K
+R6 1M
+R7 33K
+R8 1K
+R9 750K
+R10 1M
+R11 1M
+R12 1K5
+R13 47K
+R14 470K
+R15 470K
+R16 1K
+R17 100K
+R18 1M
+R19 1M 
+R20 820K
+R21 56K
+R22 220K
+R23 33K
+R24 22K
+R25 1K
+R26 2M2
+R27 2M2
+R28 4K7
+R29 1M
+R100 4K7 
+Capacitors
+C1 68n
+C2 4n7
+C3 47p
+C4 47u
+C5 100n
+C6 100n
+C7 2u2
+C8 22u
+C9 22n
+C10 47p
+C11 270p
+C12 2u2
+C13 2u2
+C14 22n
+C15 22n
+C16 22n
+C17 220n
+C18 10n
+C100 100u
+Semiconductors
+Q1 BC184
+Q2 MPF4393
+Q3 MPF4393
+Q4 MPF4393
+Q5 MPF4393
+Q6 MPF4393
+D100 1N5817
+LED 3mm 
+Potentiometers
+VOLUME B250K
+GAIN A1M
+RANGE C500K
+PRES B10K
+*Dragons Breath https://docs.pedalpcb.com/project/DragonsBreath-PedalPCB.pdf
+R1 68K Resistor, 1/4W
+R2 8K2 Resistor, 1/4W
+R3 220K Resistor, 1/4W
+R4 1M Resistor, 1/4W
+R100 4K7 Resistor, 1/4W
+C1 1n Film capacitor, 7.2 x 2.5mm
+C2 3n3 Film capacitor, 7.2 x 2.5mm
+C3 68n Film capacitor, 7.2 x 2.5mm
+C4 47p Ceramic capacitor
+C5 47u Electrolytic capacitor, 5mm
+C6 10n Film capacitor, 7.2 x 2.5mm
+C100 47u Electrolytic capacitor, 5mm
+D100 1N5817 Schottky diode, DO-41
+Q1 2N2222A BJT transistor, NPN TO-18
+RANGE A500K 16mm right-angle PCB mount pot
+HEAT B1K 16mm right-angle PCB mount pot
+BOOST B10K 16mm right-angle PCB mount pot
+*Cross Contaminator https://docs.pedalpcb.com/project/CrossContaminator.pdf
+RESISTORS
+R1 1M
+R2 4K7
+R3 1K
+R4 100K
+R5 1K
+R6 22K
+R7 3K3
+R8 22K
+R9 68K
+R100 4K7
+POTENTIOMETERS
+DIRT A100K
+TONE B50K
+BIAS B5K
+LEVEL A100K 
+CAPACITORS
+C1 100p
+C2 4u7
+C3 22u
+C4 470p
+C5 47u
+C6 100p
+C7 22u
+C8 6n8
+C9 6n8
+C100 100u 
+TRANSISTORS
+Q1 2N1711
+Q2 2N1711
+DIODES
+D100 1N5817
+*Crankshaft https://docs.pedalpcb.com/project/Crankshaft-PedalPCB.pdf
+R1 1M Resistor, 1/4W
+R2 330R Resistor, 1/4W
+R3 10K Resistor, 1/4W
+R4 2M2 Resistor, 1/4W
+R100 4K7 Resistor, 1/4W
+C1 100n Film capacitor, 7.2 x 2.5mm
+C2 100u Electrolytic capacitor, 5mm
+C3 68n Film capacitor, 7.2 x 2.5mm
+C100 100u Electrolytic capacitor, 5mm
+D1 1N60P Schottky diode, DO-35
+D2 1N60P Schottky diode, DO-35
+D3 1N60P Schottky diode, DO-35
+D100 1N5817 Schottky diode, DO-41
+Q1 2N3904 BJT transistor, NPN TO-92
+MORE B5K 16mm right-angle PCB mount pot
