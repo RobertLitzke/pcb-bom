@@ -1,0 +1,13 @@
+Greengage|https://docs.pedalpcb.com/project/Greengage.pdf
+Squidward|https://docs.pedalpcb.com/project/Squidward.pdf
+Caesar|https://docs.pedalpcb.com/project/PedalPCB-Caesar.pdf
+Shika|https://docs.pedalpcb.com/project/Shika-PedalPCB.pdf
+Percolation Station|https://docs.pedalpcb.com/project/PercolationStation.pdf
+Dirt Dauber|https://docs.pedalpcb.com/project/DirtDauber-PedalPCB.pdf
+Titania2|https://docs.pedalpcb.com/project/Titania2.pdf
+Mahayana Drive|https://docs.pedalpcb.com/project/Mahayana.pdf
+El Sol|https://docs.pedalpcb.com/project/ElSol-PedalPCB.pdf
+Sabbath Distortion|https://docs.pedalpcb.com/project/Sabbath.pdf
+Dragons Breath|https://docs.pedalpcb.com/project/DragonsBreath-PedalPCB.pdf
+Cross Contaminator|https://docs.pedalpcb.com/project/CrossContaminator.pdf
+Crankshaft|https://docs.pedalpcb.com/project/Crankshaft-PedalPCB.pdf
